@@ -135,7 +135,60 @@ body {
 
 header {
   background-color: #ffffff;
+  padding: 10px 45px;
   grid-area: 1 / 2 / 2 / 3;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  gap: 10px;
+}
+
+.header-top {
+  /* background-color: rgba(255, 255, 0, 0.218); */
+  display: grid;
+  grid-template-columns: 75% 21%;
+  align-items: center;
+}
+
+.header-bottom {
+  background-color: rgba(0, 128, 0, 0.293);
+}
+
+.search-bar {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  align-items: center;
+}
+
+.user-info {
+  display: grid;
+  grid-template-columns: 40px 40px 1fr;
+  justify-self: end;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-bar input {
+  height: 30px;
+  width: 85%;
+  background-color: #e2e8f0;
+  border-radius: 999px;
+  border: none;
+}
+
+.user-info h2 {
+  font-size: 20px;
+}
+
+
+.header-icons {
+  width: 25px;
+  height: 25px;
+  background-color: red;
+}
+
+.pfp-mini {
+  width: 35px;
+  height: 35px;
 }
 
 main {
